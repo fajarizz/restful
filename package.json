@@ -1,0 +1,26 @@
+{
+  "name": "restful",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/app.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "@prisma/client": "^6.14.0",
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "prisma": "^6.14.0",
+    "supertest": "^7.1.4",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/register": "^7.28.3",
+    "jest": "^30.0.5"
+  }
+}
