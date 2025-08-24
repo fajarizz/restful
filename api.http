@@ -1,0 +1,112 @@
+### USER ENDPOINTS
+
+# Register User
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+  "username": "testuser1",
+  "password": "TestPass123!",
+  "name": "Test User",
+  "addressId": null
+}
+
+###
+# Login User
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "testuser1",
+  "password": "TestPass123!"
+}
+
+###
+# Get User by ID
+GET http://localhost:3000/users/1
+
+###
+# Update User
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "name": "Updated User Name"
+}
+
+###
+# Logout User
+POST http://localhost:3000/users/logout
+
+
+### ADDRESS ENDPOINTS
+
+# Create Address
+POST http://localhost:3000/addresses
+Content-Type: application/json
+
+{
+  "street": "123 Main St",
+  "city": "Testville",
+  "province": "TestState",
+  "postalCode": "12345"
+}
+
+###
+# Get Address by ID
+GET http://localhost:3000/addresses/1
+
+###
+# Update Address
+PUT http://localhost:3000/addresses/1
+Content-Type: application/json
+
+{
+  "street": "456 Updated St"
+}
+
+###
+# Delete Address
+DELETE http://localhost:3000/addresses/1
+
+###
+# List Addresses
+GET http://localhost:3000/addresses
+
+
+### CONTACT ENDPOINTS
+
+# Create Contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phone": "1234567890",
+  "userId": null
+}
+
+###
+# Get Contact by ID
+GET http://localhost:3000/contacts/1
+
+###
+# Update Contact
+PUT http://localhost:3000/contacts/1
+Content-Type: application/json
+
+{
+  "phone": "0987654321"
+}
+
+###
+# Delete Contact
+DELETE http://localhost:3000/contacts/1
+
+###
+# List Contacts
+GET http://localhost:3000/contacts
+
+
